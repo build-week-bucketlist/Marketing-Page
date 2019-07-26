@@ -148,6 +148,7 @@ header #navbar {
   display: flex;
   justify-content: space-between;
   padding-right: 3%;
+  width: 27%;
 }
 header #navbar a {
   text-decoration: none;
