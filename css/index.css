@@ -147,11 +147,7 @@ header h1 {
 header #navbar {
   display: flex;
   justify-content: space-between;
-  width: 27%;
   padding-right: 3%;
-}
-header #navbar a:hover {
-  color: black;
 }
 header #navbar a {
   text-decoration: none;
