@@ -129,6 +129,11 @@ table {
 body {
   margin-top: 53px;
 }
+@media (max-width: 500px) {
+  body {
+    max-width: 500px;
+  }
+}
 header {
   display: flex;
   justify-content: space-between;
