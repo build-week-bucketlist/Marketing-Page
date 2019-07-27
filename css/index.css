@@ -161,6 +161,11 @@ header #navbar {
   padding-right: 3%;
   width: 27%;
 }
+@media (max-width: 500px) {
+  header #navbar {
+    width: 90%;
+  }
+}
 header #navbar a {
   text-decoration: none;
   color: darkgrey;
