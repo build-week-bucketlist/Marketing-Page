@@ -167,12 +167,13 @@ header #navbar a {
   font-size: 18px;
 }
 .bg-img {
-  height: 100rem;
-  width: 100%;
+  height: 91.8rem;
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
   background-attachment: fixed;
+  border-radius: 30px;
+  margin: 8px;
   overflow: hidden;
 }
 .mission {
