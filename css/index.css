@@ -172,17 +172,50 @@ header #navbar a {
   background-repeat: no-repeat;
   background-size: cover;
   background-attachment: fixed;
-  border-radius: 30px;
-  margin: 8px;
+  margin: 1px;
   overflow: hidden;
 }
 .mission {
   background-image: url("../images/typewriter-1.jpg");
-  background-position: top left, bottom center;
+  background-position: bottom left;
 }
 .main-body {
   background-image: url("../images/sticky-1.jpg");
 }
 .sub-body {
   background-image: url("../images/note-1.jpg");
+}
+.brand {
+  height: 15rem;
+  width: 65rem;
+  float: left;
+  margin: 15rem 0 10rem 8rem;
+  border-radius: 20px;
+  overflow: hidden;
+  padding: 20px;
+}
+#name {
+  font-family: 'Courier New', Courier, monospace;
+  font-size: 100px;
+  font-style: oblique;
+  font-weight: bolder;
+  color: white;
+}
+.intro {
+  height: 70rem;
+  width: 55rem;
+  background-color: rgba(245, 245, 245, 0.42);
+  float: right;
+  margin: 11.5rem 3rem 12.2rem 0;
+  border-radius: 20px;
+  overflow: hidden;
+  padding: 20px;
+}
+.intro-left {
+  height: 25rem;
+  width: 40rem;
+  float: left;
+  margin: 17rem 0 15rem 15rem;
+  border-radius: 20px;
+  padding: 20px;
 }
