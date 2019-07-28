@@ -3,7 +3,7 @@ header{
     justify-content: space-between;
     padding-bottom: 15px;
     padding-top: 15px;
-    background-color: black;
+    background-color: white;
     position: fixed;
     top: 0;
     width: 100%;
@@ -11,13 +11,15 @@ header{
         font-size: 23px;
         font-weight: bold;
         padding-left: 0.8%;
-        color: white;
     }
     #navbar{
         display: flex;
         justify-content: space-between;
         padding-right: 3%;
         width: 27%;
+        @media @phone {
+            width: 90%;
+        }
         a{
           text-decoration: none; 
           color: darkgrey;
