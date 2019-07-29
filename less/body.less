@@ -12,10 +12,13 @@
     background-image: url("../images/typewriter-1.jpg");
     background-position: bottom left;
 }
-.main-body{
+#main-body{
     background-image: url("../images/sticky-1.jpg");
 }
-.sub-body{
+#second-body{
+    background-image: url('../images/bookcase.jpg')
+}
+#sub-body{
     background-image: url("../images/note-1.jpg");
 }
 //Intro div
@@ -82,7 +85,7 @@
     padding: 20px;
 }
 
-.main-body{
+#main-body{
     #body1{
         background-color: white;
         width: 35%;
@@ -91,6 +94,7 @@
         padding-bottom: 7rem;
         display: flex;
         flex-direction: column;
+        margin-top: 25rem;
         
         h2{
             font-size: 40px;
@@ -109,8 +113,19 @@
             line-height: 1.3em;
         }
     }
+    a{
+        width:100%;
+        display: flex;
+        justify-content: center;
+        
+        img{
+            width: 300px;
+        }
+    }
+}
 
-    .body2{
+#second-body{
+    #body2{
         background-color: white;
         width: 35%;
         height: 40%;
@@ -118,7 +133,7 @@
         padding-bottom: 7rem;
         display: flex;
         flex-direction: column;
-        
+        margin-top: 25rem;   
         h2{
             font-size: 40px;
             text-decoration: grey;
@@ -134,6 +149,15 @@
             margin-right: 10%;
             font-family: 'Maven Pro', sans-serif;
             line-height: 1.3em;
+        }
+    }
+    a{
+        width:100%;
+        display: flex;
+        justify-content: center;
+        
+        img{
+            width: 300px;
         }
     }
 }
