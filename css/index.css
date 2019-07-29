@@ -131,6 +131,7 @@ table {
 }
 html {
   font-size: 62.5%;
+  scroll-behavior: smooth;
 }
 body {
   margin-top: 53px;
@@ -204,7 +205,7 @@ header #navbar a {
   font-size: 100px;
   font-style: oblique;
   font-weight: bolder;
-  color: white;
+  color: #fed9a4;
 }
 .intro {
   height: 70rem;
@@ -215,6 +216,32 @@ header #navbar a {
   border-radius: 20px;
   overflow: hidden;
   padding: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.intro h2 {
+  font-size: 60px;
+  text-align: center;
+  margin-top: 6rem;
+  margin-bottom: 6rem;
+  color: #EEAF86;
+  font-family: 'Courier New', Courier, monospace;
+}
+.intro p {
+  padding: 5rem, 0, 5rem, 0;
+  font-size: 25px;
+  color: #FFD19F;
+  text-align: center;
+  margin-bottom: 11rem;
+}
+.intro a {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+.intro a img {
+  width: 300px;
 }
 .intro-left {
   height: 25rem;
@@ -223,4 +250,54 @@ header #navbar a {
   margin: 17rem 0 15rem 15rem;
   border-radius: 20px;
   padding: 20px;
+}
+.main-body #body1 {
+  background-color: white;
+  width: 35%;
+  height: 40%;
+  padding-top: 7rem;
+  padding-bottom: 7rem;
+  display: flex;
+  flex-direction: column;
+}
+.main-body #body1 h2 {
+  font-size: 40px;
+  text-decoration: grey;
+  text-align: left;
+  margin-bottom: 5rem;
+  font-weight: bold;
+  margin-left: 10%;
+  font-family: 'Lacquer', sans-serif;
+}
+.main-body #body1 p {
+  font-size: 20px;
+  margin-left: 10%;
+  margin-right: 10%;
+  font-family: 'Maven Pro', sans-serif;
+  line-height: 1.3em;
+}
+.main-body .body2 {
+  background-color: white;
+  width: 35%;
+  height: 40%;
+  padding-top: 7rem;
+  padding-bottom: 7rem;
+  display: flex;
+  flex-direction: column;
+}
+.main-body .body2 h2 {
+  font-size: 40px;
+  text-decoration: grey;
+  text-align: left;
+  margin-bottom: 5rem;
+  font-weight: bold;
+  margin-left: 10%;
+  font-family: 'Lacquer', sans-serif;
+}
+.main-body .body2 p {
+  font-size: 20px;
+  margin-left: 10%;
+  margin-right: 10%;
+  font-family: 'Maven Pro', sans-serif;
+  line-height: 1.3em;
 }
