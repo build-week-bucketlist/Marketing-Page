@@ -185,10 +185,13 @@ header #navbar a {
   background-image: url("../images/typewriter-1.jpg");
   background-position: bottom left;
 }
-.main-body {
+#main-body {
   background-image: url("../images/sticky-1.jpg");
 }
-.sub-body {
+#second-body {
+  background-image: url('../images/bookcase.jpg');
+}
+#sub-body {
   background-image: url("../images/note-1.jpg");
 }
 .brand {
@@ -251,7 +254,7 @@ header #navbar a {
   border-radius: 20px;
   padding: 20px;
 }
-.main-body #body1 {
+#main-body #body1 {
   background-color: white;
   width: 35%;
   height: 40%;
@@ -259,8 +262,9 @@ header #navbar a {
   padding-bottom: 7rem;
   display: flex;
   flex-direction: column;
+  margin-top: 25rem;
 }
-.main-body #body1 h2 {
+#main-body #body1 h2 {
   font-size: 40px;
   text-decoration: grey;
   text-align: left;
@@ -269,14 +273,22 @@ header #navbar a {
   margin-left: 10%;
   font-family: 'Lacquer', sans-serif;
 }
-.main-body #body1 p {
+#main-body #body1 p {
   font-size: 20px;
   margin-left: 10%;
   margin-right: 10%;
   font-family: 'Maven Pro', sans-serif;
   line-height: 1.3em;
 }
-.main-body .body2 {
+#main-body a {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+#main-body a img {
+  width: 300px;
+}
+#second-body #body2 {
   background-color: white;
   width: 35%;
   height: 40%;
@@ -284,8 +296,9 @@ header #navbar a {
   padding-bottom: 7rem;
   display: flex;
   flex-direction: column;
+  margin-top: 25rem;
 }
-.main-body .body2 h2 {
+#second-body #body2 h2 {
   font-size: 40px;
   text-decoration: grey;
   text-align: left;
@@ -294,10 +307,18 @@ header #navbar a {
   margin-left: 10%;
   font-family: 'Lacquer', sans-serif;
 }
-.main-body .body2 p {
+#second-body #body2 p {
   font-size: 20px;
   margin-left: 10%;
   margin-right: 10%;
   font-family: 'Maven Pro', sans-serif;
   line-height: 1.3em;
+}
+#second-body a {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+#second-body a img {
+  width: 300px;
 }
