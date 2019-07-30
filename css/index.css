@@ -131,6 +131,7 @@ table {
 }
 html {
   font-size: 62.5%;
+  scroll-behavior: smooth;
 }
 body {
   margin-top: 53px;
@@ -151,39 +152,54 @@ header {
   width: 100%;
 }
 header h1 {
-  font-size: 23px;
+  font-size: 28px;
   font-weight: bold;
   padding-left: 0.8%;
+  font-family: 'Lacquer', sans-serif;
 }
 header #navbar {
   display: flex;
   justify-content: space-between;
   padding-right: 3%;
   width: 27%;
+  font-family: 'Courier New', Courier, monospace;
+}
+@media (max-width: 500px) {
+  header #navbar {
+    width: 90%;
+  }
 }
 header #navbar a {
   text-decoration: none;
   color: darkgrey;
-  font-size: 18px;
+  font-size: 20px;
 }
 .bg-img {
   height: 91.8rem;
   background-position: center;
-  background-repeat: no-repeat;
   background-size: cover;
   background-attachment: fixed;
-  margin: 1px;
+  margin-bottom: 1px;
   overflow: hidden;
 }
 .mission {
-  background-image: url("../images/typewriter-1.jpg");
-  background-position: bottom left;
+  background: url("../images/adventure-1.jpg") left bottom no-repeat local, url("../images/adventure-3.jpg") right top no-repeat local, url("../images/adventure-5.jpg") center no-repeat fixed;
+  background-size: 24.9%, 24.9%, 50%;
+  background-color: #252839;
 }
-.main-body {
+#main-body {
   background-image: url("../images/sticky-1.jpg");
 }
-.sub-body {
+#second-body {
+  background-image: url('../images/bookcase.jpg');
+}
+#sub-body {
   background-image: url("../images/note-1.jpg");
+}
+<<<<<<< HEAD
+=======
+#bottom-portion {
+  background: white;
 }
 .brand {
   height: 15rem;
@@ -194,22 +210,54 @@ header #navbar a {
   overflow: hidden;
   padding: 20px;
 }
+>>>>>>> 6ffa77c7e615008ec053250d4ce43c49c031a9cd
 #name {
   font-family: 'Courier New', Courier, monospace;
   font-size: 100px;
   font-style: oblique;
   font-weight: bolder;
-  color: white;
+  color: #fed9a4;
+}
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+  height: 100%;
 }
 .intro {
-  height: 70rem;
-  width: 55rem;
-  background-color: rgba(245, 245, 245, 0.42);
-  float: right;
-  margin: 11.5rem 3rem 12.2rem 0;
+  height: 55rem;
+  width: 65rem;
+  background-color: rgba(245, 245, 245, 0.31);
   border-radius: 20px;
   overflow: hidden;
+  position: absolute;
   padding: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+}
+.intro h2 {
+  font-size: 60px;
+  text-align: center;
+  margin-top: 1rem;
+  margin-bottom: 6rem;
+  color: white;
+  font-family: 'Courier New', Courier, monospace;
+}
+.intro p {
+  padding: 5rem, 0, 5rem, 0;
+  font-size: 25px;
+  color: #fafafa;
+  text-align: center;
+  margin-bottom: 2rem;
+}
+.intro a {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+.intro a img {
+  width: 10rem;
 }
 .intro-left {
   height: 25rem;
@@ -218,4 +266,139 @@ header #navbar a {
   margin: 17rem 0 15rem 15rem;
   border-radius: 20px;
   padding: 20px;
+}
+#main-body #body1 {
+  background-color: white;
+  width: 35%;
+  height: 40%;
+  padding-top: 7rem;
+  padding-bottom: 7rem;
+  display: flex;
+  flex-direction: column;
+  margin-top: 25rem;
+}
+#main-body #body1 h2 {
+  font-size: 40px;
+  text-decoration: grey;
+  text-align: left;
+  margin-bottom: 5rem;
+  font-weight: bold;
+  margin-left: 10%;
+  font-family: 'Lacquer', sans-serif;
+}
+#main-body #body1 p {
+  font-size: 20px;
+  margin-left: 10%;
+  margin-right: 10%;
+  font-family: 'Maven Pro', sans-serif;
+  line-height: 1.3em;
+}
+#main-body a {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+#main-body a img {
+  width: 300px;
+}
+#second-body #body2 {
+  background-color: white;
+  width: 35%;
+  height: 40%;
+  padding-top: 7rem;
+  padding-bottom: 7rem;
+  display: flex;
+  flex-direction: column;
+  margin-left: 65%;
+  margin-top: 25rem;
+}
+#second-body #body2 h2 {
+  font-size: 40px;
+  text-decoration: grey;
+  text-align: left;
+  margin-bottom: 5rem;
+  font-weight: bold;
+  margin-left: 10%;
+  font-family: 'Lacquer', sans-serif;
+}
+#second-body #body2 p {
+  font-size: 20px;
+  margin-left: 10%;
+  margin-right: 10%;
+  font-family: 'Maven Pro', sans-serif;
+  line-height: 1.3em;
+}
+#second-body a {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+#second-body a img {
+  width: 300px;
+}
+#sub-body #body3 {
+  background-color: white;
+  width: 35%;
+  height: 40%;
+  padding-top: 7rem;
+  padding-bottom: 7rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: left;
+  margin-top: 25rem;
+}
+#sub-body #body3 h2 {
+  font-size: 40px;
+  text-decoration: grey;
+  text-align: left;
+  margin-bottom: 5rem;
+  font-weight: bold;
+  margin-left: 10%;
+  font-family: 'Lacquer', sans-serif;
+}
+#sub-body #body3 p {
+  font-size: 20px;
+  margin-left: 10%;
+  margin-right: 10%;
+  font-family: 'Maven Pro', sans-serif;
+  line-height: 1.3em;
+}
+#sub-body a {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+#sub-body a img {
+  width: 300px;
+}
+#bottom-portion .body4 h2 {
+  text-align: center;
+  padding-top: 5%;
+  font-size: 50px;
+  font-family: 'Lacquer', sans-serif;
+}
+#bottom-portion .body4 .imagerectangle {
+  justify-content: space-between;
+  width: 90%;
+  margin-top: 3%;
+  margin-left: 5%;
+  margin-right: 5%;
+  display: flex;
+}
+#bottom-portion .body4 .imagerectangle .rectangle {
+  width: 35rem;
+}
+#bottom-portion span {
+  display: flex;
+  justify-content: center;
+  margin-top: 5%;
+}
+#bottom-portion span .signup {
+  width: 20%;
+  border-radius: 40px;
+  font-family: 'Maven Pro', sans-serif;
+  background-color: #4674AB;
+  color: white;
+  padding-top: 1rem;
+  padding-bottom: 1rem;
 }
