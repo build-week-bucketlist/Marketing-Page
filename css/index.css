@@ -177,15 +177,15 @@ header #navbar a {
 .bg-img {
   height: 91.8rem;
   background-position: center;
-  background-repeat: no-repeat;
   background-size: cover;
   background-attachment: fixed;
-  margin: 1px;
+  margin-bottom: 1px;
   overflow: hidden;
 }
 .mission {
-  background-image: url("../images/typewriter-1.jpg");
-  background-position: bottom left;
+  background: url("../images/adventure-1.jpg") left bottom no-repeat local, url("../images/adventure-3.jpg") right top no-repeat local, url("../images/adventure-5.jpg") center no-repeat fixed;
+  background-size: 24.9%, 24.9%, 50%;
+  background-color: #252839;
 }
 #main-body {
   background-image: url("../images/sticky-1.jpg");
@@ -196,6 +196,8 @@ header #navbar a {
 #sub-body {
   background-image: url("../images/note-1.jpg");
 }
+<<<<<<< HEAD
+=======
 #bottom-portion {
   background: white;
 }
@@ -208,6 +210,7 @@ header #navbar a {
   overflow: hidden;
   padding: 20px;
 }
+>>>>>>> 6ffa77c7e615008ec053250d4ce43c49c031a9cd
 #name {
   font-family: 'Courier New', Courier, monospace;
   font-size: 100px;
@@ -215,33 +218,38 @@ header #navbar a {
   font-weight: bolder;
   color: #fed9a4;
 }
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+  height: 100%;
+}
 .intro {
-  height: 70rem;
-  width: 55rem;
-  background-color: rgba(245, 245, 245, 0.42);
-  float: right;
-  margin: 11.5rem 3rem 12.2rem 0;
+  height: 55rem;
+  width: 65rem;
+  background-color: rgba(245, 245, 245, 0.31);
   border-radius: 20px;
   overflow: hidden;
+  position: absolute;
   padding: 20px;
   display: flex;
   flex-direction: column;
-  justify-content: center;
+  justify-content: space-around;
 }
 .intro h2 {
   font-size: 60px;
   text-align: center;
-  margin-top: 6rem;
+  margin-top: 1rem;
   margin-bottom: 6rem;
-  color: #EEAF86;
+  color: white;
   font-family: 'Courier New', Courier, monospace;
 }
 .intro p {
   padding: 5rem, 0, 5rem, 0;
   font-size: 25px;
-  color: #FFD19F;
+  color: #fafafa;
   text-align: center;
-  margin-bottom: 11rem;
+  margin-bottom: 2rem;
 }
 .intro a {
   width: 100%;
@@ -249,7 +257,7 @@ header #navbar a {
   justify-content: center;
 }
 .intro a img {
-  width: 300px;
+  width: 10rem;
 }
 .intro-left {
   height: 25rem;
