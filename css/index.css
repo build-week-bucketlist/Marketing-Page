@@ -196,21 +196,9 @@ header #navbar a {
 #sub-body {
   background-image: url("../images/note-1.jpg");
 }
-<<<<<<< HEAD
-=======
 #bottom-portion {
   background: white;
 }
-.brand {
-  height: 15rem;
-  width: 65rem;
-  float: left;
-  margin: 15rem 0 10rem 8rem;
-  border-radius: 20px;
-  overflow: hidden;
-  padding: 20px;
-}
->>>>>>> 6ffa77c7e615008ec053250d4ce43c49c031a9cd
 #name {
   font-family: 'Courier New', Courier, monospace;
   font-size: 100px;
@@ -401,4 +389,33 @@ header #navbar a {
   color: white;
   padding-top: 1rem;
   padding-bottom: 1rem;
+}
+footer {
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  padding-bottom: 15px;
+  padding-top: 15px;
+  background-color: white;
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+}
+footer #navbar {
+  display: flex;
+  justify-content: space-between;
+  align-content: center;
+  padding-right: 3%;
+  width: 27%;
+  font-family: 'Courier New', Courier, monospace;
+}
+@media (max-width: 500px) {
+  footer #navbar {
+    width: 90%;
+  }
+}
+footer #navbar a {
+  text-decoration: none;
+  color: darkgrey;
+  font-size: 20px;
 }
