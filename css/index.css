@@ -196,21 +196,9 @@ header #navbar a {
 #sub-body {
   background-image: url("../images/note-1.jpg");
 }
-<<<<<<< HEAD
-=======
 #bottom-portion {
   background: white;
 }
-.brand {
-  height: 15rem;
-  width: 65rem;
-  float: left;
-  margin: 15rem 0 10rem 8rem;
-  border-radius: 20px;
-  overflow: hidden;
-  padding: 20px;
-}
->>>>>>> 6ffa77c7e615008ec053250d4ce43c49c031a9cd
 #name {
   font-family: 'Courier New', Courier, monospace;
   font-size: 100px;
@@ -237,11 +225,12 @@ header #navbar a {
   justify-content: space-around;
 }
 .intro h2 {
-  font-size: 60px;
+  font-size: 70px;
+  font-weight: 600;
   text-align: center;
   margin-top: 1rem;
   margin-bottom: 6rem;
-  color: white;
+  color: #590909;
   font-family: 'Courier New', Courier, monospace;
 }
 .intro p {
