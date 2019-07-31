@@ -1,0 +1,104 @@
+body {
+    margin-top: 53px;   
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    padding-bottom: 15px;
+    padding-top: 15px;
+    background-color: white;
+    position: fixed;
+    top: 0;
+    width: 100%;
+}
+header h1 {
+    font-size: 28px;
+    font-weight: bold;
+    padding-left: 0.8%;
+    font-family: 'Lacquer', sans-serif;
+}
+header #navbar {
+    display: flex;
+    justify-content: space-between;
+    padding-right: 3%;
+    width: 27%;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+header #navbar a {
+    text-decoration: none;
+    color: darkgrey;
+    font-size: 20px;
+}
+
+.button {
+    display: flex;
+    flex-direction: column;
+    width: 30%;
+  
+}
+
+section{
+    margin-left: 20%;
+}
+
+section .button{
+    width: 30%;
+    display: flex;
+    justify-content: center;
+    margin-top: 100px;
+    margin-left: 15%;
+}
+
+section .button button{
+    border-radius: 5%;
+    height: 2rem;
+    background-color: rgba(255, 255, 255, 0.589);
+    font-family: 'Courier New', Courier, monospace;
+}
+
+section .outputBox{
+    width: 60%;
+    height: 4rem;
+    border: 3px solid silver;
+    margin-top: 175px;
+}
+
+section .outputBox #output{
+    text-align: center;
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 30px;
+}
+
+
+footer{
+    display: flex;
+    justify-content: center;
+    padding-bottom: 15px;
+    padding-top: 15px;
+    background-color: white;
+    position: fixed;
+    bottom: 0;
+    width: 100%;   
+}
+
+footer h1 {
+    font-size: 28px;
+    font-weight: bold;
+    padding-left: 0.8%;
+    font-family: 'Lacquer', sans-serif;
+}
+footer nav {
+    display: flex;
+    justify-content: space-between;
+    padding-right: 3%;
+    width: 27%;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+footer nav a {
+    text-decoration: none;
+    color: darkgrey;
+    font-size: 20px;
+}
