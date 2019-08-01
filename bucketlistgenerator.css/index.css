@@ -351,13 +351,6 @@ header #navbar a {
   font-family: 'Maven Pro', sans-serif;
   line-height: 1.3em;
 }
-#sub-body #body3 a {
-  justify-content: left;
-  margin-left: 10%;
-  font-size: 20px;
-  padding-top: 2px;
-  text-decoration: none;
-}
 #sub-body a {
   width: 100%;
   display: flex;

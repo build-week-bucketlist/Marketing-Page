@@ -7,33 +7,37 @@
   <title>Generator</title>
   <script src='js/bucketlistgenerator.js'></script>
   <link rel="stylesheet" href="css/bucketlistgenerator.css">
-  <link href="https://fonts.googleapis.com/css?family=Lacquer|Maven+Pro&display=swap" rel="stylesheet"> 
+  <link href="https://fonts.googleapis.com/css?family=Lacquer|Maven+Pro|Abril+Fatface|Anton&display=swap" rel="stylesheet"> 
 </head>
 <body>
-  <header>
-    <h1>bucketlist generator</h1>
-    <nav id='navbar'>
-      <a href="index.html">Home</a>
-      <a href="#">About</a>
-      <a href="#">Login</a>
-      <a href="#">Sign Up</a>
-    </nav>
-  </header> 
-  <section>
-    <div class='outputBox'>
-        <p id='output'></p>
-    </div>
-    <div class='button'>
-        <button onclick="randomGenerator(selectedItem)">Generate BucketList Item</button>
-    </div>
-  </section>
-  <footer>
-    <nav>
-      <a href="#">Home</a>
-      <a href="#">About</a>
-      <a href="#">Login</a>
-      <a href="#">Sign Up</a>
-    </nav>
-  </footer>
+  <section class='photoArea'>
+    <header>
+      <h1>bucketlist generator</h1>
+      <nav id='navbar'>
+        <a href="index.html">Home</a>
+        <a href="#">About</a>
+        <a href="#">Login</a>
+        <a href="#">Sign Up</a>
+      </nav>
+    </header> 
+    <section>
+      <div class='outputBox'>
+          <p id='output' onclick='reload()'></p>
+      </div>
+      <div class='button'>
+          <button id='buttonfunc' onclick="randomGenerator(selectedItem)">Generate BucketList Item</button>
+          <button onClick="window.location.reload();">Reload Page</button>
+      </div>
+    </section>
+
+    <footer>
+      <nav>
+        <a href="#">Home</a>
+        <a href="#">About</a>
+        <a href="#">Login</a>
+        <a href="#">Sign Up</a>
+      </nav>
+    </footer>
+  </section>  
 </body>
 </html>
