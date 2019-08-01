@@ -225,11 +225,12 @@ header #navbar a {
   justify-content: space-around;
 }
 .intro h2 {
-  font-size: 60px;
+  font-size: 70px;
+  font-weight: 600;
   text-align: center;
   margin-top: 1rem;
   margin-bottom: 6rem;
-  color: white;
+  color: #590909;
   font-family: 'Courier New', Courier, monospace;
 }
 .intro p {
