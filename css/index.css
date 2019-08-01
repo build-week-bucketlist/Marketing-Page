@@ -398,3 +398,32 @@ header #navbar a {
   padding-top: 1rem;
   padding-bottom: 1rem;
 }
+footer {
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  padding-bottom: 15px;
+  padding-top: 15px;
+  background-color: white;
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+}
+footer #navbar {
+  display: flex;
+  justify-content: space-between;
+  align-content: center;
+  padding-right: 3%;
+  width: 27%;
+  font-family: 'Courier New', Courier, monospace;
+}
+@media (max-width: 500px) {
+  footer #navbar {
+    width: 90%;
+  }
+}
+footer #navbar a {
+  text-decoration: none;
+  color: darkgrey;
+  font-size: 20px;
+}
