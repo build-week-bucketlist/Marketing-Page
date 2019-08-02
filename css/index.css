@@ -174,6 +174,67 @@ header #navbar a {
   color: darkgrey;
   font-size: 20px;
 }
+@media (max-width: 500px) {
+  header {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    padding-bottom: 15px;
+    padding-top: 15px;
+    background-color: white;
+    position: fixed;
+    top: 0;
+    width: 100%;
+  }
+  header h1 {
+    font-size: 30px;
+    font-weight: bold;
+    padding-left: 0.8%;
+    font-family: 'Lacquer', sans-serif;
+    padding-left: 33%;
+    margin-bottom: 10px;
+  }
+  header #navbar {
+    display: flex;
+    justify-content: space-around;
+    padding-right: 3%;
+    width: 100%;
+    font-family: 'Courier New', Courier, monospace;
+  }
+  header #navbar a {
+    text-decoration: none;
+    color: darkgrey;
+    font-size: 20px;
+  }
+  footer {
+    display: flex;
+    justify-content: center;
+    padding-bottom: 15px;
+    padding-top: 15px;
+    background-color: white;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+  }
+  footer h1 {
+    font-size: 28px;
+    font-weight: bold;
+    padding-left: 0.8%;
+    font-family: 'Lacquer', sans-serif;
+  }
+  footer nav {
+    display: flex;
+    justify-content: space-around;
+    padding-right: 3%;
+    width: 100%;
+    font-family: 'Courier New', Courier, monospace;
+  }
+  footer nav a {
+    text-decoration: none;
+    color: darkgrey;
+    font-size: 20px;
+  }
+}
 .bg-img {
   height: 91.8rem;
   background-position: center;
@@ -186,6 +247,16 @@ header #navbar a {
   background: url("../images/adventure-1.jpg") left bottom no-repeat local, url("../images/adventure-3.jpg") right top no-repeat local, url("../images/adventure-5.jpg") center no-repeat fixed;
   background-size: 24.9%, 24.9%, 50%;
   background-color: #252839;
+}
+@media (max-width: 500px) {
+  .mission {
+    background: white;
+    background-image: url('../images/adventure-1.jpg');
+    background-size: cover;
+    background-attachment: fixed;
+    margin-bottom: 1px;
+    overflow: hidden;
+  }
 }
 #main-body {
   background-image: url("../images/sticky-1.jpg");
@@ -224,6 +295,13 @@ header #navbar a {
   flex-direction: column;
   justify-content: space-around;
 }
+@media (max-width: 500px) {
+  .intro {
+    padding: 0px;
+    margin-bottom: 40%;
+    line-height: 40px;
+  }
+}
 .intro h2 {
   font-size: 70px;
   font-weight: 600;
@@ -240,10 +318,25 @@ header #navbar a {
   text-align: center;
   margin-bottom: 2rem;
 }
+@media (max-width: 500px) {
+  .intro p {
+    width: 60%;
+    color: #001302;
+    background-color: #ffffff;
+    margin-left: 130px;
+    text-align: center;
+    border: 5px solid rgba(0, 0, 0, 0.295);
+  }
+}
 .intro a {
   width: 100%;
   display: flex;
   justify-content: center;
+}
+@media (max-width: 500px) {
+  .intro a {
+    display: none;
+  }
 }
 .intro a img {
   width: 10rem;
@@ -266,6 +359,11 @@ header #navbar a {
   flex-direction: column;
   margin-top: 25rem;
 }
+@media (max-width: 500px) {
+  #main-body #body1 {
+    width: 100%;
+  }
+}
 #main-body #body1 h2 {
   font-size: 40px;
   text-decoration: grey;
@@ -287,6 +385,11 @@ header #navbar a {
   display: flex;
   justify-content: center;
 }
+@media (max-width: 500px) {
+  #main-body a {
+    display: none;
+  }
+}
 #main-body a img {
   width: 300px;
 }
@@ -300,6 +403,12 @@ header #navbar a {
   flex-direction: column;
   margin-left: 65%;
   margin-top: 25rem;
+}
+@media (max-width: 500px) {
+  #second-body #body2 {
+    width: 100%;
+    margin-left: 0px;
+  }
 }
 #second-body #body2 h2 {
   font-size: 40px;
@@ -325,6 +434,11 @@ header #navbar a {
 #second-body a img {
   width: 300px;
 }
+@media (max-width: 500px) {
+  #second-body a {
+    display: none;
+  }
+}
 #sub-body #body3 {
   background-color: white;
   width: 35%;
@@ -335,6 +449,11 @@ header #navbar a {
   flex-direction: column;
   justify-content: left;
   margin-top: 25rem;
+}
+@media (max-width: 500px) {
+  #sub-body #body3 {
+    width: 100%;
+  }
 }
 #sub-body #body3 h2 {
   font-size: 40px;
@@ -359,6 +478,11 @@ header #navbar a {
   padding-top: 2px;
   text-decoration: none;
 }
+@media (max-width: 500px) {
+  #sub-body .arrowDown {
+    display: none ;
+  }
+}
 #sub-body a {
   width: 100%;
   display: flex;
@@ -373,6 +497,12 @@ header #navbar a {
   font-size: 50px;
   font-family: 'Lacquer', sans-serif;
 }
+@media (max-width: 500px) {
+  #bottom-portion .body4 h2 {
+    margin-left: 2%;
+    margin-right: 2%;
+  }
+}
 #bottom-portion .body4 .imagerectangle {
   justify-content: space-between;
   width: 90%;
@@ -381,8 +511,29 @@ header #navbar a {
   margin-right: 5%;
   display: flex;
 }
+@media (max-width: 500px) {
+  #bottom-portion .body4 .imagerectangle {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    margin: 0;
+    margin-top: 10px;
+    margin-top: 20px;
+  }
+}
 #bottom-portion .body4 .imagerectangle .rectangle {
   width: 35rem;
+}
+@media (max-width: 500px) {
+  #bottom-portion .body4 .imagerectangle .p2 {
+    display: none;
+  }
+  #bottom-portion .body4 .imagerectangle .p3 {
+    display: none;
+  }
+  #bottom-portion .body4 .imagerectangle .p4 {
+    display: none;
+  }
 }
 #bottom-portion span {
   display: flex;
@@ -397,6 +548,11 @@ header #navbar a {
   color: white;
   padding-top: 1rem;
   padding-bottom: 1rem;
+}
+@media (max-width: 500px) {
+  #bottom-portion span .signup {
+    width: 80%;
+  }
 }
 footer {
   display: flex;
