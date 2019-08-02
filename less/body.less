@@ -7,21 +7,7 @@
     margin-bottom: 1px;
     overflow: hidden;
 }
-
-#main-body{
-    background-image: url("../images/sticky-1.jpg");
-}
-#second-body{
-    background-image: url('../images/bookcase.jpg')
-}
-#sub-body{
-    background-image: url("../images/note-1.jpg");
-}
-#bottom-portion{
-    background: white;
-}
-
-#mission{
+.mission{
     background: url("../images/adventure-1.jpg") left bottom no-repeat local,
         url("../images/adventure-3.jpg") right top no-repeat local,
         url("../images/adventure-5.jpg") center no-repeat fixed;
@@ -35,11 +21,26 @@
         margin-bottom: 1px;
         overflow: hidden;
     }
+}
+#main-body{
+    background-image: url("../images/sticky-1.jpg");
+}
+#second-body{
+    background-image: url('../images/bookcase.jpg')
+}
+#sub-body{
+    background-image: url("../images/note-1.jpg");
+}
+#bottom-portion{
+    background: white;
+}
+
     .container{
         display: flex;
         justify-content: center;
-        align-items: flex-end;
-        height: 100%;
+        @media(max-width: 500px){
+            display: none;
+        }
         
         .intro{
             height: 55rem;
@@ -97,7 +98,6 @@
             }
         } 
     }
-}
 
 #name{
     font-family: 'Courier New', Courier, monospace;
@@ -318,3 +318,5 @@
         }
     }
 }
+
+

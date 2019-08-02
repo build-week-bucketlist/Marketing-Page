@@ -1,1 +1,29 @@
-//
+footer{
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    padding-bottom: 15px;
+    padding-top: 15px;
+    background-color: white;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+
+    #navbar{
+        display: flex;
+        justify-content: space-between;
+        align-content: center;
+        padding-right: 3%;
+        width: 27%;
+        font-family: 'Courier New', Courier, monospace;
+        @media @phone {
+            width: 90%;
+        }
+        a{
+          text-decoration: none; 
+          color: darkgrey;
+          font-size: 20px;
+        }
+        
+    }
+}
