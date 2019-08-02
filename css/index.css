@@ -126,10 +126,8 @@ table {
   border-collapse: collapse;
   border-spacing: 0;
 }
-* {
-  box-sizing: border-box;
-}
 html {
+  box-sizing: border-box;
   font-size: 62.5%;
   scroll-behavior: smooth;
 }
@@ -182,11 +180,6 @@ header #navbar a {
   margin-bottom: 1px;
   overflow: hidden;
 }
-.mission {
-  background: url("../images/adventure-1.jpg") left bottom no-repeat local, url("../images/adventure-3.jpg") right top no-repeat local, url("../images/adventure-5.jpg") center no-repeat fixed;
-  background-size: 24.9%, 24.9%, 50%;
-  background-color: #252839;
-}
 #main-body {
   background-image: url("../images/sticky-1.jpg");
 }
@@ -199,20 +192,28 @@ header #navbar a {
 #bottom-portion {
   background: white;
 }
-#name {
-  font-family: 'Courier New', Courier, monospace;
-  font-size: 100px;
-  font-style: oblique;
-  font-weight: bolder;
-  color: #fed9a4;
+#mission {
+  background: url("../images/adventure-1.jpg") left bottom no-repeat local, url("../images/adventure-3.jpg") right top no-repeat local, url("../images/adventure-5.jpg") center no-repeat fixed;
+  background-size: 24.9%, 24.9%, 50%;
+  background-color: #252839;
 }
-.container {
+@media (max-width: 500px) {
+  #mission {
+    background: white;
+    background-image: url('../images/adventure-1.jpg');
+    background-size: cover;
+    background-attachment: fixed;
+    margin-bottom: 1px;
+    overflow: hidden;
+  }
+}
+#mission .container {
   display: flex;
   justify-content: center;
   align-items: flex-end;
   height: 100%;
 }
-.intro {
+#mission .container .intro {
   height: 55rem;
   width: 65rem;
   background-color: rgba(245, 245, 245, 0.31);
@@ -224,7 +225,14 @@ header #navbar a {
   flex-direction: column;
   justify-content: space-around;
 }
-.intro h2 {
+@media (max-width: 500px) {
+  #mission .container .intro {
+    padding: 0px;
+    margin-bottom: 40%;
+    line-height: 40px;
+  }
+}
+#mission .container .intro h2 {
   font-size: 70px;
   font-weight: 600;
   text-align: center;
@@ -233,28 +241,42 @@ header #navbar a {
   color: #590909;
   font-family: 'Courier New', Courier, monospace;
 }
-.intro p {
+#mission .container .intro p {
   padding: 5rem, 0, 5rem, 0;
   font-size: 25px;
   color: #fafafa;
   text-align: center;
   margin-bottom: 2rem;
 }
-.intro a {
+@media (max-width: 500px) {
+  #mission .container .intro p {
+    width: 60%;
+    color: #001302;
+    background-color: #ffffff;
+    margin-left: 130px;
+    text-align: center;
+    border: 5px solid rgba(0, 0, 0, 0.295);
+  }
+}
+#mission .container .intro a {
   width: 100%;
   display: flex;
   justify-content: center;
 }
-.intro a img {
+@media (max-width: 500px) {
+  #mission .container .intro a {
+    display: none;
+  }
+}
+#mission .container .intro a img {
   width: 10rem;
 }
-.intro-left {
-  height: 25rem;
-  width: 40rem;
-  float: left;
-  margin: 17rem 0 15rem 15rem;
-  border-radius: 20px;
-  padding: 20px;
+#name {
+  font-family: 'Courier New', Courier, monospace;
+  font-size: 100px;
+  font-style: oblique;
+  font-weight: bolder;
+  color: #fed9a4;
 }
 #main-body #body1 {
   background-color: white;
@@ -265,6 +287,11 @@ header #navbar a {
   display: flex;
   flex-direction: column;
   margin-top: 25rem;
+}
+@media (max-width: 500px) {
+  #main-body #body1 {
+    width: 100%;
+  }
 }
 #main-body #body1 h2 {
   font-size: 40px;
@@ -287,6 +314,11 @@ header #navbar a {
   display: flex;
   justify-content: center;
 }
+@media (max-width: 500px) {
+  #main-body a {
+    display: none;
+  }
+}
 #main-body a img {
   width: 300px;
 }
@@ -300,6 +332,12 @@ header #navbar a {
   flex-direction: column;
   margin-left: 65%;
   margin-top: 25rem;
+}
+@media (max-width: 500px) {
+  #second-body #body2 {
+    width: 100%;
+    margin-left: 0px;
+  }
 }
 #second-body #body2 h2 {
   font-size: 40px;
@@ -325,6 +363,11 @@ header #navbar a {
 #second-body a img {
   width: 300px;
 }
+@media (max-width: 500px) {
+  #second-body a {
+    display: none;
+  }
+}
 #sub-body #body3 {
   background-color: white;
   width: 35%;
@@ -335,6 +378,11 @@ header #navbar a {
   flex-direction: column;
   justify-content: left;
   margin-top: 25rem;
+}
+@media (max-width: 500px) {
+  #sub-body #body3 {
+    width: 100%;
+  }
 }
 #sub-body #body3 h2 {
   font-size: 40px;
@@ -352,6 +400,18 @@ header #navbar a {
   font-family: 'Maven Pro', sans-serif;
   line-height: 1.3em;
 }
+#sub-body #body3 a {
+  justify-content: left;
+  margin-left: 10%;
+  font-size: 20px;
+  padding-top: 2px;
+  text-decoration: none;
+}
+@media (max-width: 500px) {
+  #sub-body .arrowDown {
+    display: none ;
+  }
+}
 #sub-body a {
   width: 100%;
   display: flex;
@@ -366,6 +426,12 @@ header #navbar a {
   font-size: 50px;
   font-family: 'Lacquer', sans-serif;
 }
+@media (max-width: 500px) {
+  #bottom-portion .body4 h2 {
+    margin-left: 2%;
+    margin-right: 2%;
+  }
+}
 #bottom-portion .body4 .imagerectangle {
   justify-content: space-between;
   width: 90%;
@@ -374,8 +440,29 @@ header #navbar a {
   margin-right: 5%;
   display: flex;
 }
+@media (max-width: 500px) {
+  #bottom-portion .body4 .imagerectangle {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    margin: 0;
+    margin-top: 10px;
+    margin-top: 20px;
+  }
+}
 #bottom-portion .body4 .imagerectangle .rectangle {
   width: 35rem;
+}
+@media (max-width: 500px) {
+  #bottom-portion .body4 .imagerectangle .p2 {
+    display: none;
+  }
+  #bottom-portion .body4 .imagerectangle .p3 {
+    display: none;
+  }
+  #bottom-portion .body4 .imagerectangle .p4 {
+    display: none;
+  }
 }
 #bottom-portion span {
   display: flex;
@@ -390,4 +477,9 @@ header #navbar a {
   color: white;
   padding-top: 1rem;
   padding-bottom: 1rem;
+}
+@media (max-width: 500px) {
+  #bottom-portion span .signup {
+    width: 80%;
+  }
 }
