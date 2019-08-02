@@ -268,16 +268,20 @@ header #navbar a {
 #bottom-portion {
   background: white;
 }
+#name {
+  font-family: 'Courier New', Courier, monospace;
+  font-size: 100px;
+  font-style: oblique;
+  font-weight: bolder;
+  color: #fed9a4;
+}
 .container {
   display: flex;
   justify-content: center;
+  align-items: flex-end;
+  height: 100%;
 }
-@media (max-width: 500px) {
-  .container {
-    display: none;
-  }
-}
-.container .intro {
+.intro {
   height: 55rem;
   width: 65rem;
   background-color: rgba(245, 245, 245, 0.31);
@@ -290,13 +294,13 @@ header #navbar a {
   justify-content: space-around;
 }
 @media (max-width: 500px) {
-  .container .intro {
+  .intro {
     padding: 0px;
     margin-bottom: 40%;
     line-height: 40px;
   }
 }
-.container .intro h2 {
+.intro h2 {
   font-size: 70px;
   font-weight: 600;
   text-align: center;
@@ -305,7 +309,7 @@ header #navbar a {
   color: #590909;
   font-family: 'Courier New', Courier, monospace;
 }
-.container .intro p {
+.intro p {
   padding: 5rem, 0, 5rem, 0;
   font-size: 25px;
   color: #fafafa;
@@ -313,7 +317,7 @@ header #navbar a {
   margin-bottom: 2rem;
 }
 @media (max-width: 500px) {
-  .container .intro p {
+  .intro p {
     width: 60%;
     color: #001302;
     background-color: #ffffff;
@@ -322,25 +326,26 @@ header #navbar a {
     border: 5px solid rgba(0, 0, 0, 0.295);
   }
 }
-.container .intro a {
+.intro a {
   width: 100%;
   display: flex;
   justify-content: center;
 }
 @media (max-width: 500px) {
-  .container .intro a {
+  .intro a {
     display: none;
   }
 }
-.container .intro a img {
+.intro a img {
   width: 10rem;
 }
-#name {
-  font-family: 'Courier New', Courier, monospace;
-  font-size: 100px;
-  font-style: oblique;
-  font-weight: bolder;
-  color: #fed9a4;
+.intro-left {
+  height: 25rem;
+  width: 40rem;
+  float: left;
+  margin: 17rem 0 15rem 15rem;
+  border-radius: 20px;
+  padding: 20px;
 }
 #main-body #body1 {
   background-color: white;
