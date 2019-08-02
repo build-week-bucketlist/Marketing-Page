@@ -13,6 +13,14 @@
         url("../images/adventure-5.jpg") center no-repeat fixed;
     background-size: 24.9%, 24.9%, 50%;
     background-color: rgb(37, 40, 57);
+    @media(max-width: 500px){
+        background: white;
+        background-image: url('../images/adventure-1.jpg');
+        background-size: cover;
+        background-attachment: fixed;
+        margin-bottom: 1px;
+        overflow: hidden;
+    }
 }
 #main-body{
     background-image: url("../images/sticky-1.jpg");
@@ -61,6 +69,11 @@
     display: flex;
     flex-direction: column;
     justify-content: space-around;
+    @media(max-width: 500px){
+        padding: 0px;
+        margin-bottom: 40%;
+        line-height: 40px;
+    }
     h2{
         font-size: 70px;
         font-weight: 600;
@@ -69,6 +82,7 @@
         margin-bottom: 6rem;
         color: rgb(89, 9, 9);
         font-family: 'Courier New', Courier, monospace;
+        
     }
     p{
         padding: 5rem, 0, 5rem, 0;
@@ -76,12 +90,23 @@
         color: rgb(250, 250, 250);
         text-align: center;
         margin-bottom: 2rem;
+        @media(max-width: 500px){
+            width: 60%;
+            color: rgb(0, 19, 2);
+            background-color: rgb(255, 255, 255);
+            margin-left: 130px;
+            text-align: center;
+            border: 5px solid rgba(0, 0, 0, 0.295);
+        }
         
     }
     a{
         width:100%;
         display: flex;
         justify-content: center;
+        @media(max-width: 500px){
+            display: none;
+        }
         
         img{
             width: 10rem;
@@ -107,6 +132,9 @@
         display: flex;
         flex-direction: column;
         margin-top: 25rem;
+        @media(max-width: 500px){
+            width: 100%;
+        }
         
         h2{
             font-size: 40px;
@@ -129,6 +157,9 @@
         width:100%;
         display: flex;
         justify-content: center;
+        @media(max-width: 500px){
+            display: none;
+        }
         
         img{
             width: 300px;
@@ -146,7 +177,11 @@
         display: flex;
         flex-direction: column;
         margin-left: 65%;
-        margin-top: 25rem;   
+        margin-top: 25rem;
+        @media(max-width: 500px){
+            width: 100%;
+            margin-left: 0px;
+        }   
         h2{
             font-size: 40px;
             text-decoration: grey;
@@ -173,6 +208,9 @@
         img{
             width: 300px;
         }
+        @media(max-width: 500px){
+            display: none;
+        }
     }
 }
 
@@ -186,7 +224,10 @@
         display: flex;
         flex-direction: column;
         justify-content: left;
-        margin-top: 25rem;   
+        margin-top: 25rem;
+        @media(max-width: 500px){
+            width: 100%;
+        }   
         h2{
             font-size: 40px;
             text-decoration: grey;
@@ -212,10 +253,16 @@
         }
         
     }
+    .arrowDown{
+        @media(max-width: 500px){
+            display:none ;
+        }
+    }
     a{
         width:100%;
         display: flex;
         justify-content: center;
+        
         
         img{
             width: 300px;
@@ -230,6 +277,10 @@
             padding-top: 5%;
             font-size: 50px;
             font-family: 'Lacquer', sans-serif;
+            @media(max-width: 500px){
+                margin-left: 2%;
+                margin-right: 2%;
+            }
         }
         .imagerectangle{
             justify-content: space-between;
@@ -238,9 +289,29 @@
             margin-left: 5%;
             margin-right: 5%;
             display: flex;
+            @media(max-width: 500px){
+                width: 100%;
+                display: flex;
+                justify-content: center;
+                margin: 0;
+                margin-top: 10px;
+                margin-top: 20px;
+            }
+
 
             .rectangle{
                 width: 35rem
+            }
+            @media(max-width: 500px){
+                .p2{
+                    display: none;
+                }
+                .p3{
+                    display: none;
+                }
+                .p4{
+                    display: none;
+                }
             }
         }
     }
@@ -256,6 +327,11 @@
             color: white;
             padding-top: 1rem;
             padding-bottom: 1rem;
+            @media(max-width: 500px){
+                width: 80%;
+            }
         }
     }
 }
+
+
