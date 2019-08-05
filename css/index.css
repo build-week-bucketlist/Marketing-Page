@@ -299,11 +299,18 @@ header #navbar a {
   flex-direction: column;
   justify-content: space-around;
 }
+@media (max-width: 750px) {
+  .intro {
+    width: 70%;
+  }
+}
 @media (max-width: 500px) {
   .intro {
     padding: 0px;
     margin-bottom: 40%;
     line-height: 40px;
+    width: 80%;
+    text-align: center;
   }
 }
 .intro h2 {
@@ -327,7 +334,7 @@ header #navbar a {
     width: 60%;
     color: #001302;
     background-color: #ffffff;
-    margin-left: 130px;
+    margin: auto;
     text-align: center;
     border: 5px solid rgba(0, 0, 0, 0.295);
   }
