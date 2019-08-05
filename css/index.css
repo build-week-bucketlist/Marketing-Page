@@ -363,7 +363,7 @@ header #navbar a {
   width: 35%;
   height: 40%;
   padding-top: 7rem;
-  padding-bottom: 7rem;
+  padding-bottom: 2rem;
   display: flex;
   flex-direction: column;
   margin-top: 25rem;
@@ -412,7 +412,7 @@ header #navbar a {
   width: 35%;
   height: 40%;
   padding-top: 7rem;
-  padding-bottom: 7rem;
+  padding-bottom: 2rem;
   display: flex;
   flex-direction: column;
   margin-left: 65%;
@@ -464,7 +464,7 @@ header #navbar a {
   width: 35%;
   height: 40%;
   padding-top: 7rem;
-  padding-bottom: 7rem;
+  padding-bottom: 2rem;
   display: flex;
   flex-direction: column;
   justify-content: left;
